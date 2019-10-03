@@ -21,7 +21,7 @@ Update 18.1.18: Kindly developed further by geraldosm, should work on Laravel 5.
 #### Step 1:
 
 ```
-composer require nollaversio/laravel-sqs-jobless
+composer require dpardoata/laravel-sqs-jobless
 ```
 **Note!** If you get installation error because of minimum-stability issue, you need to add key-pair *"minimum-stability": "dev"* to your composer.json file.
 
