@@ -21,8 +21,7 @@ class JoblessQueue extends SqsQueue {
 
         $response = $this->sqs->receiveMessage([
             'QueueUrl' => $queue,
-            'AttributeNames' => ['ApproximateReceiveCount'],
-            'MaxNumberOfMessages' => 10
+            'AttributeNames' => ['ApproximateReceiveCount']
         ]);
 
         if (version_compare(PHP_VERSION, '7.2.0', '>=')) {
